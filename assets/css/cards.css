@@ -1,20 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,90&display=swap');
+@charset "UTF-8";
 
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppings', sans-serif;
-}
-body
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #222;
-    min-height: 100vh;
-}
 .containerCard
 {
     position: relative;
@@ -22,7 +7,9 @@ body
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    margin: auto;
+    box-sizing: border-box;
 }
 .containerCard .card
 {
@@ -126,7 +113,7 @@ body
     .containerCard .card .imgBx img,
     .containerCard .card:hover .imgBx img
     {
-        max-width: 100px;        
+        max-width: 100px;
     }
     .containerCard .card .content
     {

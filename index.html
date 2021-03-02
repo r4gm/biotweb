@@ -1,14 +1,75 @@
-<!doctype html>
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartas que es IoT</title>
-    <link rel="stylesheet" href="assets/css/cards.css">
-    <link rel="stylesheet" href="assets/css/socialNetwork.css">
+    <title>BIOT</title>
+    <link rel="" href="/css/master.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/mainBanner.css">
+    <link rel="stylesheet" href="./assets/css/cards.css">
+    <link rel="stylesheet" href="./assets/css/socialNetwork.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
-<body>    
+  <body>
+    <!-- header -->
+    <!-- slider -->
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" class="rad" id="radio1" value="1">
+        <input type="radio" name="radio-btn" class="rad" id="radio2" value="2">
+        <input type="radio" name="radio-btn" class="rad" id="radio3" value="3">
+        <input type="radio" name="radio-btn" class="rad" id="radio4" value="4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="./assets/images/mainBanner/car2.jpg" alt="">
+          <div class="txt">
+            <h2>Tecnologías IOT para conectar y automatizar su vehículo</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./assets/images/mainBanner/office4.jpg" alt="">
+          <div class="txt">
+            <h2>Apoyamos a nuestros clientes para  mejorar su sistema.</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./assets/images/mainBanner/robot.jpg" alt="">
+          <div class="txt">
+            <h2>Desarrollamos sistemas interactivos para contestación automática, basado en inteligencia artificial,</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./assets/images/mainBanner/web.jpg" alt="">
+          <div class="txt">
+            <h2>Desarrollo de sitios web adaptados a la necesidad de su empresa. </h2>
+          </div>
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+    <!-- Conozca IOT -->
+    <h1 class="sectionTitle">Conozca IOT</h1>
     <div class="containerCard">
         <div class="card">
             <div class="imgBx" data-text="¿Que es IoT?">
@@ -55,5 +116,19 @@
             </div>
         </div>
     </div>
-</body>
+    <!-- Servicios -->
+    <!-- Ejemplos y soluciones -->
+    <!-- Redes Sociales -->
+    <ul class="socialIcons">
+        <li class="linkedin"><a href=""><i class="fa fa-fw fa-linkedin"></i>LinkedIn</a></li>
+        <li class="twitter"><a href=""><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
+        <li class="facebook"><a href=""><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
+        <li class="instagram"><a href=""><i class="fa fa-fw fa-instagram"></i>Instagram</a></li>
+    </ul>
+    <!-- Footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/script/mainBanner.js" charset="utf-8"></script>
+
+  </body>
 </html>

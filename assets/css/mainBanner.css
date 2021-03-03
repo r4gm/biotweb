@@ -21,7 +21,7 @@
 .slide{
   position: relative;
   width: 20%;
-  /* //transition: 2s; */
+  transition: 2s;
 }
 
 .slide img{
@@ -44,15 +44,15 @@
 
 .txt{
   position: absolute;
-  top: 200px;
-  left: 10vh;
+  top: 140px;
+  left: calc(50% - 20vh);
   width: 40vh;
   height:100px;
 }
 
 .txt h2{
   color: #fff;
-  font-size: calc(1em + 1vw);
+  font-size: calc(1.2em + 1vw);
   text-align: center;
   text-shadow: 2px 2px #333333;
 }

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.cardContainer{
+  width: 100%;
+  height: 1800px;
+  display: flex;
+}
+
+.outer{
+  width: 100%;
+  height: 600px;
+  background-image: url('../images/mainBanner/car.jpg');
+  background-size:cover;
+  background-position: right center;
+  position: relative;
+  overflow: hidden;
+}
+
+.outer:before{
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: 1020px;
+  background: #fff;
+  border-radius: 50%;
+  top: -35%;
+  left: -320px;
+  background: rgba(34, 2, 0, 0.95);
+}
+
+.mTitle{
+  position: absolute;
+  top: 200px;
+  left: 180px;
+}
+
+.maintxt, .subtxt{
+  font-size: 80px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.subtxt{
+  font-size: 50px;
+  text-align: right;
+}

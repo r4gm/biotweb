@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.card{
+  margin: 100px auto 0;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+.cardInner{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.cardInner.isflipped{
+  transform: rotateY(180deg);
+}
+
+.cardface{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0,0,0,0.2);
+}
+
+.front{
+  background-image: url('../images/mainBanner/car.jpg');
+  background-size: cover;
+  /* background-image: linear-gradient(to bottom left,#ffce00,#fe4880); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front h2{
+  color: #fff;
+  font-size: 32px;
+}
+
+.back{
+  background-color: var(#ccc);
+  transform: rotateY(180deg);
+}
+
+.cardcont{
+  width: 100%;
+  height: 100%;
+}
+
+.cardheader{
+  position: relative;
+  padding: 30px 30px 40px;
+}
+
+.cardheader:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 0 0 50% 0;
+  background-image: linear-gradient(to bottom left,#ffce00,#fe4880);
+  /* border-bottom: 3px solid #000; */
+  /* background-image: url('../images/mainBanner/car.jpg'); */
+}
+
+.pp{
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 0;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+.cardheader h2{
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cardbody{
+  padding: 30px;
+}
+
+.cardbody h3{
+  color: #d2d2d2;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.cardbody p{
+  color: #2d2d2d;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.backTitle{
+  font-size: 35px;
+  padding: 20px 0 20px;
+}

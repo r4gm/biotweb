@@ -29,6 +29,7 @@
   min-width: 400px;
   width: 100%;
   height: auto;
+  max-height: 1000px;
   min-height: 100%;
 }
 
@@ -44,10 +45,11 @@
 
 .txt{
   position: absolute;
-  top: 140px;
-  left: calc(50% - 20vh);
-  width: 40vh;
-  height:100px;
+  top: 210px;
+  left: calc(50% - 50vh);
+  width: 100vh;
+  height: auto;
+  display: flex;
 }
 
 .txt h2{
@@ -133,4 +135,15 @@
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background: #40D3DC;
+}
+
+@media (max-width: 1000px){
+  .txt{
+    position: absolute;
+    top: 210px;
+    left: calc(50% - 19vh);
+    width: 38vh;
+    height: auto;
+    display: flex;
+  }
 }

@@ -5,10 +5,28 @@
     <title></title>
     <link rel="stylesheet" href="./assets/css/industrias2.css">
     <link rel="stylesheet" href="./assets/css/industriasCard.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
   </head>
   <body>
+    <div class="navbar">
+      <ul style="padding-left: 0px;">
+        <li class="logo"> <a href="./index.html"> BIOT </a></li>
 
-    <section class="mainBanner">
+        <section class="div_navbar_items">
+          <li class="navbar_items"> <a href="#home"> Inicio </a> </li>
+          <li class="navbar_items"> <a href="./servicios.html"> Servicios </a> </li>
+          <li class="navbar_items"> <a href="./industrias.html"> Industrias </a> </li>
+          <li class="navbar_items"> <a href="./quienesSomos.html"> ¿Quiénes Somos? </a> </li>
+          <li class="navbar_items"> <a href="./contactus.html"> contáctanos </a> </li>
+        </section>
+
+        <li class="icon">
+          <a href="#" onclick="navBarFunction()"> &#9776;</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="mainBanner" id="home">
       <img src="./assets/images/industrias/main.jpg" alt="">
       <div class="degradado"></div>
       <div class="txt">
@@ -246,6 +264,10 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="./assets/js/industriaCards.js" charset="utf-8"></script>
+
+      <!-- SCRIPT HEAER  -->
+      <script  src="./assets/script/header.js"></script>
+
 
   </body>
 </html>

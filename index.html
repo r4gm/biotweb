@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>BIOT</title>
     <link rel="" href="/css/master.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/EjSolCar.css">
     <link rel="stylesheet" href="./assets/css/EjSolCarMobile.css">
     <link rel="stylesheet" href="./assets/css/index.css">
@@ -15,9 +16,33 @@
 </head>
   <body>
     <!-- header -->
+    
+
+  	<!-- Navigation Bar -->
+    <header>
+      <div class="navbar">
+        <ul style="padding-left: 0px;">
+          <li class="logo"> <a href="./index.html"> BIOT </a></li>
+
+          <section class="div_navbar_items">
+            <li class="navbar_items"> <a href="#home"> Inicio </a> </li>
+            <li class="navbar_items"> <a href="./servicios.html"> Servicios </a> </li>
+            <li class="navbar_items"> <a href="./industrias.html"> Industrias </a> </li>
+            <li class="navbar_items"> <a href="./quienesSomos.html"> ¿Quiénes Somos? </a> </li>
+            <li class="navbar_items"> <a href="./contactus.html"> contáctanos </a> </li>
+          </section>
+
+          <li class="icon">
+            <a href="#" onclick="navBarFunction()"> &#9776;</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+
     <!-- slider -->
     <!--image slider start-->
-    <div class="slider">
+    <div class="slider" id="home">
       <div class="slides">
         <!--radio buttons start-->
         <input type="radio" name="radio-btn" class="rad" id="radio1" value="1">
@@ -341,7 +366,8 @@
   </body>
 
   <!--Scripts Ejemplos y Soluciones -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./assets/script/eys_script.js"></script>
+  <script  src="./assets/script/eys_script.js"></script>
+  <script  src="./assets/script/header.js"></script>
 
 
     <script type="text/javascript">

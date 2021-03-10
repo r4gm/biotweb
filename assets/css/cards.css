@@ -2,7 +2,7 @@
 
 .containerCard
 {
-    border-radius: 7px;
+    border-radius: 25px;
     position: relative;
     width: 1000px;
     display: flex;
@@ -14,7 +14,7 @@
 }
 .containerCard .card
 {
-    border-radius: 7px;
+    border-radius: 25px;
     position: relative;
     height: 200px;
     background: #fff;
@@ -24,7 +24,7 @@
 }
 .containerCard .card .imgBx
 {
-    border-radius: 7px;
+    border-radius: 25px;
     position: absolute;
     top: 0;
     left: 0;

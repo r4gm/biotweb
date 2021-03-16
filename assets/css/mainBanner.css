@@ -1,16 +1,15 @@
 @charset "UTF-8";
 
 .slider{
-  background: #e6e6e6;
   width: 100%;
-  height: 60%;
-  min-height: 40%;
+  height: 500px;
   overflow: hidden;
+  position: relative;
 }
 
 .slides{
   width: 500%;
-  height: 500px;
+  height: 100%;
   display: flex;
 }
 
@@ -21,17 +20,27 @@
 .slide{
   position: relative;
   width: 20%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   transition: 2s;
 }
 
-.slide img{
-  max-width: 2500px;
-  min-width: 400px;
-  width: 100%;
-  height: auto;
-  max-height: 1000px;
-  min-height: 100%;
+.slide.s1{
+  background-image: url('../images/mainBanner/car.jpg');
+}
 
+.slide.s2{
+  background-image: url('../images/mainBanner/office4.jpg');
+}
+
+.slide.s3{
+  background-image: url('../images/mainBanner/bot.jpg');
+}
+
+.slide.s4{
+  background-image: url('../images/mainBanner/web.jpg');
 }
 
 .gradiente{
@@ -147,4 +156,64 @@
     height: auto;
     display: flex;
   }
+}
+
+.cLeft, .cRight{
+  position: absolute;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 12px;
+  background: #116466;
+  border: 3px solid #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-top: 225px;
+  z-index: 1000;
+  line-height: 45px;
+
+  float: left;
+}
+
+.cLeft{
+  left: 30px;
+  margin-left: 100px;
+}
+
+.cRight{
+  right: 30px;
+  margin-right: 100px;
+}
+
+@media (max-width: 1000px){
+
+  .cLeft, .cRight{
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 12px;
+    background: #116466;
+    border: none;
+    /* border: 2px solid #fff; */
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin-top: 450px;
+    z-index: 1000;
+    line-height: 35px;
+    font-size: 15px;
+
+    float: left;
+  }
+
+  .cLeft{
+    /* left: 30px; */
+    margin-left: 5px;
+  }
+
+  .cRight{
+    /* right: 30px; */
+    margin-right: 5px;
+  }
+
 }

@@ -31,6 +31,7 @@
   height: auto;
   max-height: 1000px;
   min-height: 100%;
+
 }
 
 .gradiente{
@@ -40,7 +41,7 @@
   width: 100%;
   height: 100%;
   justify-content: center;
-  background: linear-gradient(0deg, #FFFAFA 1%, transparent 30%);
+  background: linear-gradient(180deg, #000 1%, transparent 30%), linear-gradient(0deg, #FFFAFA 1%, transparent 30%);
 }
 
 .txt{
@@ -69,7 +70,7 @@
 }
 
 .manual-btn{
-  border: 2px solid #40D3DC;
+  border: 2px solid #116466;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -81,7 +82,7 @@
 }
 
 .manual-btn:hover{
-  background: #40D3DC;
+  background: #116466;
 }
 
 #radio1:checked ~ .first{
@@ -111,7 +112,7 @@
 }
 
 .navigation-auto div{
-  border: 2px solid #40D3DC;
+  border: 2px solid #116466;
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
@@ -122,19 +123,19 @@
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-  background: #40D3DC;
+  background: #116466;
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2{
-  background: #40D3DC;
+  background: #116466;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
-  background: #40D3DC;
+  background: #116466;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
-  background: #40D3DC;
+  background: #116466;
 }
 
 @media (max-width: 1000px){

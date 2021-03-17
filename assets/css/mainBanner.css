@@ -1,219 +1,177 @@
 @charset "UTF-8";
 
-.slider{
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  position: relative;
+#slider {
+   width: 100%;
+   text-align: center;
 }
-
-.slides{
-  width: 500%;
-  height: 100%;
-  display: flex;
+#slider input[type=radio] {
+   display: none;
 }
-
-.slides input{
-  display: none;
+#slider label {
+   cursor:pointer;
+   text-decoration: none;
 }
-
-.slide{
-  position: relative;
-  width: 20%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  transition: 2s;
+#slides {
+   background: #fff;
+   position: relative;
+   z-index: 1;
 }
-
-.slide.s1{
-  background-image: url('../images/mainBanner/car.jpg');
+#overflow {
+   width: 100%;
+   overflow: hidden;
 }
-
-.slide.s2{
+#slide1:checked ~ #slides .inner {
+   margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+   margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+   margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+   margin-left: -300%;
+}
+#slides .inner {
+   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: 400%;
+   height: 300px;
+}
+#slides .slide {
+   width: 25%;
+   float:left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 600px;
+   color: #fff;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+#slides .slide h2 {
+   font-size: 45px;
+   text-shadow: 2px 2px 1px #0a0e27, 5px 3px 1px #0a0e27;
+   color: #fff;
+}
+#slides .slide p {
+   font-size: 30px;
+   text-shadow: 3px 3px 3px #000;
+   color: #fff;
+}
+#slides .slide_1 {
+   background-image: url('../images/mainBanner/car.jpg');
+}
+#slides .slide_2 {
   background-image: url('../images/mainBanner/office4.jpg');
 }
-
-.slide.s3{
+#slides .slide_3 {
   background-image: url('../images/mainBanner/bot.jpg');
 }
-
-.slide.s4{
+#slides .slide_4 {
   background-image: url('../images/mainBanner/web.jpg');
 }
-
-.gradiente{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  background: linear-gradient(180deg, #000 1%, transparent 30%), linear-gradient(0deg, #FFFAFA 1%, transparent 30%);
+#controls {
+   margin: -180px 0 0 0;
+   width: 100%;
+   height: 50px;
+   z-index: 3;
+   position: relative;
 }
-
-.txt{
-  position: absolute;
-  top: 210px;
-  left: calc(50% - 50vh);
-  width: 100vh;
-  height: auto;
-  display: flex;
+#controls label {
+   transition: opacity 0.2s ease-out;
+   display: none;
+   width: 50px;
+   height: 50px;
+   opacity: .8;
 }
-
-.txt h2{
-  color: #fff;
-  font-size: calc(1.2em + 1vw);
-  text-align: center;
-  text-shadow: 2px 2px #333333;
+#controls label:hover {
+   opacity: 1;
 }
-
-/*css for manual slide navigation*/
-.navigation-manual{
-  position: absolute;
-  width: 100%;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+   background: url('../images/mainBanner/next.svg') no-repeat;
+   float:right;
+   display: block;
+   margin: -160px 50px 0 0;
 }
-
-.manual-btn{
-  border: 2px solid #116466;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
+#slide1:checked ~ #controls label:nth-last-child(1),
+#slide2:checked ~ #controls label:nth-last-child(4),
+#slide3:checked ~ #controls label:nth-last-child(3),
+#slide4:checked ~ #controls label:nth-last-child(2){
+   background: url('../images/mainBanner/next.svg') no-repeat;
+   transform: rotate(180deg);
+   float:left;
+   margin: -160px 0 0 50px;
+   display: block;
 }
-
-.manual-btn:not(:last-child){
-  margin-right: 40px;
+#bullets {
+   margin: 150px 0 0;
+   text-align: center;
 }
-
-.manual-btn:hover{
-  background: #116466;
+#bullets label {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius:100%;
+   background: #ccc;
+   margin: 0 10px;
 }
-
-#radio1:checked ~ .first{
-  margin-left: 0;
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+   background: #444;
 }
-
-#radio2:checked ~ .first{
-  margin-left: -20%;
-}
-
-#radio3:checked ~ .first{
-  margin-left: -40%;
-}
-
-#radio4:checked ~ .first{
-  margin-left: -60%;
-}
-
-/*css for automatic navigation*/
-
-.navigation-auto{
-  position: absolute;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 460px;
-}
-
-.navigation-auto div{
-  border: 2px solid #116466;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: #116466;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: #116466;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: #116466;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: #116466;
-}
-
-@media (max-width: 1000px){
-  .txt{
-    position: absolute;
-    top: 210px;
-    left: calc(50% - 19vh);
-    width: 38vh;
-    height: auto;
-    display: flex;
-  }
-}
-
-.cLeft, .cRight{
-  position: absolute;
-  cursor: pointer;
-  color: #fff;
-  border-radius: 12px;
-  background: #116466;
-  border: 3px solid #fff;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  margin-top: 225px;
-  z-index: 1000;
-  line-height: 45px;
-
-  float: left;
-}
-
-.cLeft{
-  left: 30px;
-  margin-left: 100px;
-}
-
-.cRight{
-  right: 30px;
-  margin-right: 100px;
-}
-
-@media (max-width: 1000px){
-
-  .cLeft, .cRight{
-    position: absolute;
-    cursor: pointer;
-    color: #fff;
-    border-radius: 12px;
-    background: #116466;
-    border: none;
-    /* border: 2px solid #fff; */
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    margin-top: 450px;
-    z-index: 1000;
-    line-height: 35px;
-    font-size: 15px;
-
-    float: left;
+@media screen and (max-width: 1000px) {
+  #slides {
+     padding: 0px;
+     border: none;
+     background: #fff;
+     position: relative;
+     z-index: 1;
   }
 
-  .cLeft{
-    /* left: 30px; */
-    margin-left: 5px;
-  }
+   #slides .slide h2 {
+     padding: 0 100px 0;
+      font-size: 60px;
+      text-shadow: 2px 2px 0 #0a0e27, 5px 3px 0 #0a0e27;
+      display: none;
+   }
 
-  .cRight{
-    /* right: 30px; */
-    margin-right: 5px;
-  }
+   #slides .slide p {
+     padding: 0 45px 0;
+      font-size: 30px;
+      text-shadow: 3px 3px 3px #000;
+   }
 
+   #controls label {
+      transition: opacity 0.2s ease-out;
+      display: none;
+      width: 30px;
+      height: 30px;
+      opacity: .8;
+   }
+
+   #slide1:checked ~ #controls label:nth-child(2),
+   #slide2:checked ~ #controls label:nth-child(3),
+   #slide3:checked ~ #controls label:nth-child(4),
+   #slide4:checked ~ #controls label:nth-child(1) {
+      background: url('../images/mainBanner/next.svg') no-repeat;
+      float:right;
+      display: block;
+      margin: -160px 8px 0 0;
+   }
+   #slide1:checked ~ #controls label:nth-last-child(1),
+   #slide2:checked ~ #controls label:nth-last-child(4),
+   #slide3:checked ~ #controls label:nth-last-child(3),
+   #slide4:checked ~ #controls label:nth-last-child(2){
+      background: url('../images/mainBanner/next.svg') no-repeat;
+      transform: rotate(180deg);
+      float:left;
+      margin: -160px 0 0 8px;
+      display: block;
+   }
 }

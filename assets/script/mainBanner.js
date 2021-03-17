@@ -1,12 +1,14 @@
 $(function() {
   var counter = 1;
-  setInterval(function(){
+  var inter = setInterval(showSlides, 5000);
+
+  function showSlides() {
     document.getElementById('radio' + counter).checked = true;
     counter++;
     if(counter > 4){
       counter = 1;
     }
-  }, 5000);
+  }
 
   $('.rad').on('click',function() {
     counter = $(this).val();
@@ -14,10 +16,13 @@ $(function() {
 
   $('.cLeft').on('click',function() {
     counter--;
-    if (counter < 0) {
+    if (counter <= 0) {
       counter = 4;
     }
-    console.log(counter + "cLeft clicked");
+    clearInterval(inter);
+    document.getElementById('radio' + counter).checked = true;
+    setTimeout(() => {  inter = setInterval(showSlides, 5000); }, 2000);
+
   });
 
   $('.cRight').on('click',function() {
@@ -25,6 +30,9 @@ $(function() {
     if (counter > 4) {
       counter = 1;
     }
-    console.log(counter + "cRight clicked");
+    clearInterval(inter);
+    document.getElementById('radio' + counter).checked = true;
+    setTimeout(() => {  inter = setInterval(showSlides, 5000); }, 2000);
   });
+
 });

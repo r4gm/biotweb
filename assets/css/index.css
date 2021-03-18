@@ -19,8 +19,10 @@ body{
 }
 
 .sectionTitle{
+  font-size: 2.25rem;
+  line-height: 1.22;
   font-size: 48px;
-  color: #c2c2c2;
+  color: black;
   text-align: center;
   padding: 35px 0 25px 0;
 }

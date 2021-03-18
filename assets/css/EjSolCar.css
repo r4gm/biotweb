@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
 
 .cont_carousel {
@@ -118,7 +116,7 @@ position: relative;
 }
 
 .carousel-item__subtitle {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', italic;
     letter-spacing: 3px;
     font-size: 10px;
     text-transform: uppercase;
@@ -133,7 +131,7 @@ position: relative;
 
 .carousel-item__title {
     margin: 20px 0 0 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Source Sans Pro', italic;
     /*font-size: 30px;*/
     font-size: 2vw;
     line-height: 25px;

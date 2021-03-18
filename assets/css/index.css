@@ -4,7 +4,11 @@
 *{
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+=======
   font-family: 'Source Sans Pro', italic;
+>>>>>>> e96aa7e103c73e91c4b33145e277b310f03ea1ba
 }
 
 body{
@@ -15,8 +19,21 @@ body{
 }
 
 .sectionTitle{
-  font-size: 48px;
-  color: #c2c2c2;
+  border-top: 2px solid #e4e4e4;
+  font-size: 2.7rem;
+  line-height: normal;
+  
+  color: black;
   text-align: center;
-  padding: 35px 0 25px 0;
+  
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #2d3436;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #636e72;
+  border-radius: 8px;
 }

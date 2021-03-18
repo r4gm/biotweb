@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Quicksand';
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
 
 .containerNav {
@@ -32,7 +32,7 @@
 }
 
 .navbar li a {
-  font-family: Quicksand;
+  font-family: Source Sans Pro, italic;
   font-size: 1.15em;
   color: white;
   display: inline-block;
@@ -66,7 +66,7 @@
 p {
   color:black;
   font-size: 17px;
-  font-family: Quicksand;
+  font-family: Source Sans Pro;
 }
 
 /* ----------------------- */

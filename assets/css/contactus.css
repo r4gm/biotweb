@@ -23,14 +23,14 @@
 
 .biotForm{
   width: 650px;
-  margin: 10px auto;
+  margin: 40px auto;
   background: rgba(0, 0, 0, 0.8);
-  padding: 50px 50px 10px;
+  padding: 50px;
   position: relative;
 }
 
 #content input{
-  width: 200px;
+  width: 400px;
 }
 
 #content input, textarea{
@@ -47,8 +47,8 @@
   height: 60px;
   background-color: #CD5C5C;
   border: none;
-  color: #fff;
+  color: #ccc;
   font-size: 20px;
-  margin: 30px 0 0 195px;
+  margin: 40px 0 0 195px;
 
 }

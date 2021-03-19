@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
-body{
-
-	line-height: 1.5;
-	font-family: 'Source Sans Serif', italic;
-}
-*{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
-}
 .container{
 
 	max-width: 1170px;

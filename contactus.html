@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/biot.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/contactus.css">
   </head>
   <body>
 
@@ -34,28 +34,19 @@
 
     <!-- Aquí va el contenido de la página -->
     <div id="content">
-      <section class="contact">
-        <article class="contactBk">
-          <h1>Contáctenos</h1>
-          <div class="sep"></div>
-          <div class="contactCards">
-            <div class="card">
-              <i class="card-icon far fa-envelope"></i>
-              <p> soporte@biot.mx </p>
-            </div>
+      <div class="contactGradient">
+        <h1>Contáctanos</h1>
 
-            <div class="card">
-              <i class="card-icon fas fa-phone"></i>
-              <p> +52 (56) 1275-4517 </p>
-            </div>
-
-            <div class="card">
-              <i class="card-icon fas fa-map-marker-alt"></i>
-              <p> Yaxcaba #38, Col. Pedregal de San Nicolás, C.P. 14100, Tlalpan, CDMX, México. </p>
-            </div>
-          </div>
-        </article>
-      </section>
+        <form class="biotForm" action="index.html" method="post">
+          <ul>
+            <li> <input type="text" name="nombre" value="" placeholder="Nombre" required> </li>
+            <li> <input type="text" name="número" value="" placeholder="Número de teléfono"> </li>
+            <li> <input type="text" name="correo" value="" placeholder="Correo electrónico" required> </li>
+            <li> <textarea name="mensaje" rows="8" cols="60" placeholder="Mensaje"></textarea> </li>
+          </ul>
+          <button type="submit" name="button">Enviar</button>
+        </form>
+      </div>
     </div>
 
 

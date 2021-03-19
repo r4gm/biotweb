@@ -111,6 +111,7 @@ header p {
     height: 100vh;
     background-color: #151414;
     transition: background-color .6s;
+    z-index: 1000;
   }
 
   header .navbar.responsive li.logo {

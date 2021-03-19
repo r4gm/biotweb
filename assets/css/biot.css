@@ -153,8 +153,9 @@ header p {
 /* FOOTER */
 footer {
   position: relative;
-	background-color: #24262b;
-  padding: 70px 0;
+  background-color: #24262b;
+  padding-top: 70px;
+  padding-bottom: 20px;
 }
 footer .container{
   max-width: 1170px;
@@ -165,7 +166,7 @@ footer .row {
   flex-wrap: wrap;
 }
 footer .footer-col{
-  width: 25%;
+  width: 20%;
   padding: 0 15px;
 }
 footer .footer-col h4{

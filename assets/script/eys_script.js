@@ -35,4 +35,19 @@ $(function(){
   }
 });
 
+$(function() {
+	$(window).resize(function() {
+		if(window.innerWidth > 850){
+			$('.cont_carousel').show();
+			$('.blog-card-main').hide();
+			//document.getElementById("car1").style.height = "400px";
+
+		}else{
+			$('.cont_carousel').hide();
+			$('.blog-card-main').show();
+			//document.getElementById("car1").style.height = "0px";
+		}
+	}).resize();
+});
+
 //////////////////////////////////////////////

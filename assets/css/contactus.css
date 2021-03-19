@@ -18,7 +18,7 @@
   color: #ddd;
   text-transform: uppercase;
   font-size: 35px;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .biotForm{
@@ -51,4 +51,21 @@
   font-size: 20px;
   margin: 40px 0 0 195px;
 
+}
+
+@media (max-width: 800px){
+  .biotForm{
+    width: 300px;
+    padding: 30px;
+    position: relative;
+  }
+
+  #content input, textarea{
+    width: 230px;
+    margin-left: 10px;
+  }
+
+  #content .biotForm button{
+    margin: 40px 0 0 95px;
+  }
 }

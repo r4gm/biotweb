@@ -53,7 +53,7 @@ header .navbar li.navbar_items {
 }
 
 header .navbar li a {
-  font-family: Source Sans Pro, italic;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 1.15em;
   color: white;
   display: inline-block;

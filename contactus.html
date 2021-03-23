@@ -37,12 +37,12 @@
       <div class="contactGradient">
         <h1>Contáctanos</h1>
 
-        <form class="biotForm" action="index.html" method="post">
+        <form id="biotForm" class="biotForm" action="index.html" method="post">
           <ul>
-            <li> <input type="text" name="nombre" value="" placeholder="Nombre" required> </li>
+            <li> <input type="text" name="nombre" value="" placeholder="Nombre" required></li>
             <li> <input type="text" name="número" value="" placeholder="Número de teléfono"> </li>
-            <li> <input type="text" name="correo" value="" placeholder="Correo electrónico" required> </li>
-            <li> <textarea name="mensaje" rows="8" cols="60" placeholder="Mensaje"></textarea> </li>
+            <li> <input type="text" id="correo" value="" placeholder="Correo electrónico" required></li>
+            <li> <textarea name="mensaje" rows="8" cols="60" placeholder="Mensaje" required></textarea> </li>
           </ul>
           <button type="submit" name="button">Enviar</button>
         </form>

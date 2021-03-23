@@ -17,6 +17,7 @@
    background: #fff;
    position: relative;
    z-index: 1;
+   transition: all 2 ease;
 }
 .gradient{
   width: 100%;
@@ -29,6 +30,7 @@
   position: absolute;
   top: 40%;
   width: 100%;
+  animation: 2s slider infinite;
 }
 
 #overflow {
@@ -48,7 +50,7 @@
    margin-left: -300%;
 }
 #slides .inner {
-   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   transition: all 0.75s ease;
    width: 400%;
    height: 300px;
 }
@@ -94,7 +96,7 @@
    position: relative;
 }
 #controls label {
-   transition: opacity 0.2s ease-out;
+   transition: all 0.75s ease;
    display: none;
    width: 50px;
    height: 50px;
@@ -170,7 +172,7 @@
    }
 
    #controls label {
-      transition: opacity 0.2s ease-out;
+      transition: all 0.75s ease;
       display: none;
       width: 30px;
       height: 30px;

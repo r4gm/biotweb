@@ -3,12 +3,12 @@
 
 span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
+pre, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
+form, label, legend, table, caption,
+tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
@@ -81,42 +81,6 @@ input, select, textarea {
 
 
 /* Type */
-
-	html {
-		font-size: 18pt;
-	}
-
-		@media screen and (max-width: 1680px) {
-
-			html {
-				font-size: 14pt;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			html {
-				font-size: 12pt;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			html {
-				font-size: 11pt;
-			}
-
-		}
-
-		@media screen and (max-width: 360px) {
-
-			html {
-				font-size: 10pt;
-			}
-
-		}
 
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -385,11 +349,6 @@ input, select, textarea {
 		width: 100%;
 	}
 
-		table tbody tr {
-			border: solid 1px;
-			border-left: 0;
-			border-right: 0;
-		}
 
 		table td {
 			padding: 0.75rem 0.75rem;
@@ -414,20 +373,6 @@ input, select, textarea {
 			border-collapse: separate;
 		}
 
-			table.alt tbody tr td {
-				border: solid 1px;
-				border-left-width: 0;
-				border-top-width: 0;
-			}
-
-				table.alt tbody tr td:first-child {
-					border-left-width: 1px;
-				}
-
-			table.alt tbody tr:first-child td {
-				border-top-width: 1px;
-			}
-
 			table.alt thead {
 				border-bottom: 0;
 			}
@@ -440,36 +385,12 @@ input, select, textarea {
 			table-layout: fixed;
 		}
 
-	table tbody tr {
-		border-color: rgba(0, 0, 0, 0.2);
-	}
-
-		table tbody tr:nth-child(2n + 1) {
-			background-color: rgba(0, 0, 0, 0.05);
-		}
-
-		table tbody tr.alt {
-			background-color: rgba(0, 0, 0, 0.05) !important;
-		}
-
 	table th {
 		color: #000000;
 	}
 
 	table thead {
 		border-bottom-color: rgba(0, 0, 0, 0.2);
-	}
-
-	table tfoot {
-		border-top-color: rgba(0, 0, 0, 0.2);
-	}
-
-	table.alt tbody tr td {
-		border-color: rgba(0, 0, 0, 0.2);
-	}
-
-	table.uniform tbody tr:nth-child(2n + 1) {
-		background-color: transparent;
 	}
 
 /* Banner (style1) */
@@ -1945,36 +1866,12 @@ input, select, textarea {
 				border-top-color: white;
 			}
 
-			#wrapper > .invert table tbody tr {
-				border-color: white;
-			}
-
-				#wrapper > .invert table tbody tr:nth-child(2n + 1) {
-					background-color: rgba(255, 255, 255, 0.125);
-				}
-
-				#wrapper > .invert table tbody tr.alt {
-					background-color: rgba(255, 255, 255, 0.125) !important;
-				}
-
 			#wrapper > .invert table th {
 				color: #ffffff;
 			}
 
 			#wrapper > .invert table thead {
 				border-bottom-color: white;
-			}
-
-			#wrapper > .invert table tfoot {
-				border-top-color: white;
-			}
-
-			#wrapper > .invert table.alt tbody tr td {
-				border-color: white;
-			}
-
-			#wrapper > .invert table.uniform tbody tr:nth-child(2n + 1) {
-				background-color: transparent;
 			}
 
 			#wrapper > .invert .banner .image {

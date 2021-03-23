@@ -2,7 +2,7 @@
 
 
 span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h2, h3, h5, h6, p, blockquote,
 pre, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -117,14 +117,14 @@ input, select, textarea {
 			font-size: 1.25rem;
 		}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h5, h6 {
 		font-weight: 300;
 		line-height: 1.375;
 		letter-spacing: -0.05em;
 		margin: 0 0 1rem 0;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		h1 a, h2 a, h3 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
 		}
@@ -140,10 +140,6 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1.5rem;
-	}
-
-	h4 {
-		font-size: 1.1rem;
 	}
 
 	h5 {
@@ -235,10 +231,6 @@ input, select, textarea {
 			font-size: 1.25rem;
 		}
 
-		h4 {
-			font-size: 1rem;
-		}
-
 	}
 
 	input, select, textarea {
@@ -257,7 +249,7 @@ input, select, textarea {
 		color: #000000;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h5, h6 {
 		color: #000000;
 	}
 
@@ -365,20 +357,12 @@ input, select, textarea {
 			border-bottom: solid 2px;
 		}
 
-		table tfoot {
-			border-top: solid 2px;
-		}
-
 		table.alt {
 			border-collapse: separate;
 		}
 
 			table.alt thead {
 				border-bottom: 0;
-			}
-
-			table.alt tfoot {
-				border-top: 0;
 			}
 
 		table.fixed {
@@ -1696,7 +1680,7 @@ input, select, textarea {
 				color: #ffffff;
 			}
 
-			#wrapper > .invert h1, #wrapper > .invert h2, #wrapper > .invert h3, #wrapper > .invert h4, #wrapper > .invert h5, #wrapper > .invert h6 {
+			#wrapper > .invert h1, #wrapper > .invert h2, #wrapper > .invert h3, #wrapper > .invert h5, #wrapper > .invert h6 {
 				color: #ffffff;
 			}
 

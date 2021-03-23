@@ -160,9 +160,13 @@ header p {
 /* FOOTER */
 footer {
   position: relative;
+  width: 100%
+  height: auto;
+  padding: 50px 100px;
   background-color: #24262b;
-  padding-top: 70px;
-  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 footer .container{

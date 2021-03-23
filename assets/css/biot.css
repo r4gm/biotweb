@@ -172,6 +172,8 @@ ul{
 	list-style: none;
 }
 .footer{
+	position: relative;
+	z-index: 100000;
 	background-color: #24262b;
     padding: 70px 0;
 }

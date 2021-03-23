@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+
 :root {
   --color-brand-primary: hsl(var(--color-brand-primary-h), 43%, 43%);
   --color-brand-primary-h: 251;
@@ -23,9 +25,7 @@
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
   --s6: calc(var(--s5) * var(--ratio));
-  font-size: 62.5%;
-  line-height: 1.6;
-  box-sizing: border-box;
+  line-height: 1.5;
 }
 @media (min-width: 40.625em) {
   :root {
@@ -43,27 +43,18 @@
   }
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 
 body {
-  font-size: 1.4rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
+  font-family: "Source Sans Pro", sans-serif;
   /*Color abajo*/
   background: linear-gradient(to left,#116466,#1E1E62,#96182D);
   min-height: 100vh;
 }
-@media (min-width: 48em) {
-  body {
-    font-size: 1.5rem;
-  }
-}
+
 
 @supports (font-variation-settings: normal) {
   body {
-    font-family: "Inter var", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
   }
 }
 h2, h3, p, ul {
@@ -299,7 +290,7 @@ ul li:before {
 }
 .c-services__item h3 {
   color: Black;
-  font-size: var(--s1);
+  font-size: 1.7em;
   letter-spacing: -0.04em;
   line-height: 1.2;
 }

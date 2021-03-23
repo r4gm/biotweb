@@ -1,4 +1,6 @@
 var counter = 2;
+var controls = document.getElementById('controls');
+var rad = document.getElementById('bullets');
 
 setInterval(function() {
   document.getElementById('slide' + counter).checked = true;
@@ -7,6 +9,21 @@ setInterval(function() {
     counter = 1;
   }
 }, 6500);
+
+controls.onclick = function() {
+  setTimeout(() => {
+    counter = $("input[name='slider']:checked").val();
+    console.log("counter " + counter);
+  }, 2000);
+
+}
+
+rad.onclick = function() {
+  setTimeout(() => {
+    counter = $("input[name='slider']:checked").val();
+    console.log("counter " + counter);
+  }, 2000);
+}
 
 // $(function() {
 //   var $slider = $('.slides');

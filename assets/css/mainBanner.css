@@ -30,9 +30,9 @@
   position: absolute;
   top: 40%;
   width: 100%;
+  /* left: 0; */
   animation: 2s slider infinite;
 }
-
 #overflow {
    width: 100%;
    overflow: hidden;

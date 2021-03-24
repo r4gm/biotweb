@@ -7,13 +7,13 @@
 body:before{
     content: 'Servicios';
     position: fixed;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 16em;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 1px #1E1E62;
+    -webkit-text-stroke: 1px rgba(30, 30, 98, 0.1);
 }
 .sectionServ{
     position: relative;

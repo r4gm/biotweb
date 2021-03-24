@@ -41,9 +41,9 @@
 .containerCard .card:hover .imgBx
 {
     border-radius: 5px;
-    width: 125px;
+    width: 150px;
     font-size: 0px;
-    height: 125px;
+    height: 150px;
     left: -75px;
     top: calc(50% - 75px);
     transition: 0.5s ease-in-out;
@@ -79,8 +79,9 @@
 {
     position: absolute;
     right: 0;
+    top: 10%;
     width: calc(100% - 75px);
-    height: 75%;
+    height: 70%;
     padding: 15px;
     text-align: justify;
     display: flex;
@@ -129,6 +130,6 @@
     .containerCard .card .content
     {
         position: relative;
-        width: 90%;
+        width: 100%;
     }
 }

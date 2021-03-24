@@ -13,9 +13,8 @@ body:before{
     font-size: 16em;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 1px rgb(72, 82, 219);
+    -webkit-text-stroke: 1px #1E1E62;
 }
-
 .sectionServ{
     position: relative;
     display: flex;
@@ -27,7 +26,7 @@ body:before{
 .sectionServ h2{
     margin-left: 200px;
     font-size: 4em;
-    color: teal;
+    color: #116466;
     margin-bottom: 20px;
 }
 
@@ -68,5 +67,5 @@ body:before{
     text-align: justify;
     color: #fff;
     box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
-    border-bottom: 6px solid #4ac7ff;
+    border-bottom: 6px solid #5A1B48;
 }

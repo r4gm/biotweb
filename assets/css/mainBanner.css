@@ -1,6 +1,33 @@
 @charset "UTF-8";
 
-#slider {
+.slider{
+  overflow: hidden;
+}
+
+.slider .slides{
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+}
+
+.slider .slides .slide{
+  float: left;
+  width: 25%;
+  height: 500px;
+}
+
+.s1 { background-image: url('../images/mainBanner/car.jpg'); }
+.s2 { background-image: url('../images/mainBanner/office4.jpg'); }
+.s3 { background-image: url('../images/mainBanner/bot.jpg'); }
+.s4 { background-image: url('../images/mainBanner/web.jpg'); }
+
+/* .s1{ background: #fcc; }
+.s2{ background: #ffc; }
+.s3{ background: #cfc; }
+.s4{ background: #ccf; } */
+
+/* #slider {
    width: 100%;
    height: 550px;
    text-align: center;
@@ -30,7 +57,6 @@
   position: absolute;
   top: 40%;
   width: 100%;
-  /* left: 0; */
   animation: 2s slider infinite;
 }
 #overflow {
@@ -198,4 +224,4 @@
       margin: -160px 0 0 8px;
       display: block;
    }
-}
+} */

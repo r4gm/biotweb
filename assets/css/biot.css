@@ -63,6 +63,7 @@ header .navbar li.navbar_items {
 header .navbar li a {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 1.15em;
+  font-weight: 400;  
   color: white;
   display: inline-block;
   text-align: center;
@@ -183,6 +184,7 @@ ul{
 }
 .footer-col h4{
 	font-size: 18px;
+	font-weight: 400;
 	color: #ffffff;
 	margin-bottom: 35px;
 	font-weight: 500;
@@ -205,7 +207,7 @@ ul{
 	font-size: 16px;
 	color: #ffffff;
 	text-decoration: none;
-	font-weight: 300;
+	font-weight: 500;
 	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;

@@ -82,6 +82,7 @@ body:before{
   .sectionServ{
     width: 100%;
     height: 800px;
+    overflow: hidden;
   }
 
   .sectionServ .containerServ{

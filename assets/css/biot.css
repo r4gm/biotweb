@@ -71,6 +71,13 @@ header .navbar li a {
   text-decoration: none;
 }
 
+/**/
+.activeNav {
+	border-bottom-style: solid; 
+	border-bottom-color: purple;
+}
+/**/
+
 header .navbar li.navbar_items a:hover {
   border-bottom-style: solid;
   border-bottom-color: #116466;

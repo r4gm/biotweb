@@ -70,7 +70,7 @@ body:before{
   body:before{
       content: 'Servicios';
       position: fixed;
-      top: 25%;
+      top: 15%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 6em;
